@@ -1,0 +1,9 @@
+<script>
+	export default {
+		name: 'BaseFonts',
+	}
+</script>
+
+<style lang="scss">
+	@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&subset=cyrillic');
+</style>

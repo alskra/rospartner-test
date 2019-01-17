@@ -1,0 +1,140 @@
+extends ../pug/base
+
+block app
+	index-page(inline-template)
+		.index-page
+			.container
+				page-section(inline-template)
+					section.page-section
+						h1.title Основная информация
+
+						base-content(inline-template)
+							.base-content
+								p.
+									Sed ut perspiciatis, #[a(href="") unde omnis iste] natus error sit voluptatem accusantium doloremque
+									laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+									architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas
+									sit, aspernatur aut odit aut fugit, sed quia consequuntur.
+
+				form-example(inline-template)
+					form.form-example(action="")
+						.row
+							.col.--size-33
+								form-field(
+									label="Название группы"
+									placeholder="Введите название"
+									name="name"
+								)
+
+							.col.--size-33
+								form-field(
+									label="ФИО ответственного"
+									placeholder="Введите ФИО"
+									value="Михайлов Игорь Петрович"
+									name="fio"
+								)
+
+							.col.--size-33
+								form-field(
+									label="Email для входа"
+									placeholder="Введите email"
+									type="email"
+									name="email"
+								)
+
+						.row
+							.col.--size-100
+								form-field(
+									label="Описание рабочей группы"
+									placeholder="Введите краткое и емкое описание для рабочей группы"
+									tag="textarea"
+									name="description"
+								)
+
+						.action-row
+							.action-col
+								base-button(inline-template)
+									button.base-button.--primary(type="submit") Сохранить
+
+							.action-col
+								base-button(inline-template)
+									button.base-button.--default(type="reset") Отмена
+
+				page-section(inline-template)
+					section.page-section
+						h2.title Управление уведомлениями
+
+						warning-msg
+							p.
+								Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+								totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
+								dicta sunt, explicabo. nemo enim ipsam voluptatem.
+
+						notifications-list(inline-template)
+							.notifications-list
+								.row
+									.col
+										.notification.--active
+											.__head
+												.__icon.--telegram
+												strong.__title Telegram
+
+											.__body
+												base-button.__button(inline-template)
+													button.base-button.--default.--small(type="reset") Отключить аккаунт
+
+												form-checkbox.__checkbox(
+													checked
+													label="Только служебные"
+												)
+									.col
+										.notification
+											.__head
+												.__icon.--icq
+												strong.__title ICQ
+
+											.__body
+												.__actions
+													.__action-item
+														.__action-label Скопируйте команду авторизации
+
+														button.__action-btn(title="Скопировать")
+															base-icon(name="file_copy-outline")
+
+													.__action-item
+														.__action-label Перейдите в чат и отправьте команду боту
+
+														button.__action-btn(title="Скопировать")
+															base-icon(name="file_copy-outline")
+
+									.col
+										.notification
+											.__head
+												.__icon.--skype
+												strong.__title Skype
+
+											.__body
+												.__actions
+													.__action-item
+														.__action-label Скопируйте команду авторизации
+
+														button.__action-btn(title="Скопировать")
+															base-icon(name="file_copy-outline")
+
+													.__action-item
+														.__action-label Перейдите в чат и отправьте команду боту
+
+														button.__action-btn(title="Скопировать")
+															base-icon(name="file_copy-outline")
+
+									.col
+										.notification.--active
+											.__head
+												.__icon.--slack
+												strong.__title Slack
+
+											.__body
+												base-button.__button(inline-template)
+													button.base-button.--default.--small(type="reset") Отключить аккаунт
+
+												form-checkbox.__checkbox(label="Только служебные")

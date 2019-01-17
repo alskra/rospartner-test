@@ -1,0 +1,31 @@
+doctype html
+html.base-page(lang="ru")
+	head
+		block meta
+			meta(charset="utf-8")
+			meta(name="viewport" content="width=960")
+
+		base(href=BASE_URL)
+
+		block favicon
+			link(rel="icon" href=`${BASE_URL}favicon.ico`)
+
+		title=htmlWebpackPlugin.options.title
+
+		block head-styles
+			style.
+				[inline-template] {
+					display: none;
+				}
+
+		block head-scripts
+	body.__body
+		noscript
+			strong We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.
+
+		#app
+			block app
+
+		block body-scripts
+		//- built files will be auto injected
+

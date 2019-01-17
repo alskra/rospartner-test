@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="base-page" lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=960">
+		<base href="/">
+		<link rel="icon" href="/favicon.ico">
+		<title>Тестовое задание — Роспартнер</title>
+		<style>
+			[inline-template] {
+				display: none;
+			}
+			
+		</style>
+	<link href="/css/chunk-vendors.b5067893.css" rel="preload" as="style"><link href="/css/index.6b337f91.css" rel="preload" as="style"><link href="/js/chunk-vendors.a3610a03.js" rel="modulepreload" as="script"><link href="/js/index.7d8084a5.js" rel="modulepreload" as="script"><link href="/css/chunk-vendors.b5067893.css" rel="stylesheet"><link href="/css/index.6b337f91.css" rel="stylesheet"></head>
+	<body class="base-page__body">
+		<noscript><strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+		<div id="app">
+			<index-page inline-template>
+				<div class="index-page">
+					<div class="container">
+						<page-section inline-template>
+							<section class="page-section">
+								<h1 class="title">Основная информация</h1>
+								<base-content inline-template>
+									<div class="base-content">
+										<p>Sed ut perspiciatis, <a href="">unde omnis iste</a> natus error sit voluptatem accusantium doloremque
+											laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+											architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas
+											sit, aspernatur aut odit aut fugit, sed quia consequuntur.
+											
+										</p>
+									</div>
+								</base-content>
+							</section>
+						</page-section>
+						<form-example inline-template>
+							<form class="form-example" action="">
+								<div class="row">
+									<div class="col col--size-33">
+										<form-field label="Название группы" placeholder="Введите название" name="name"></form-field>
+									</div>
+									<div class="col col--size-33">
+										<form-field label="ФИО ответственного" placeholder="Введите ФИО" value="Михайлов Игорь Петрович" name="fio"></form-field>
+									</div>
+									<div class="col col--size-33">
+										<form-field label="Email для входа" placeholder="Введите email" type="email" name="email"></form-field>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col col--size-100">
+										<form-field label="Описание рабочей группы" placeholder="Введите краткое и емкое описание для рабочей группы" tag="textarea" name="description"></form-field>
+									</div>
+								</div>
+								<div class="action-row">
+									<div class="action-col">
+										<base-button inline-template>
+											<button class="base-button base-button--primary" type="submit">Сохранить</button>
+										</base-button>
+									</div>
+									<div class="action-col">
+										<base-button inline-template>
+											<button class="base-button base-button--default" type="reset">Отмена</button>
+										</base-button>
+									</div>
+								</div>
+							</form>
+						</form-example>
+						<page-section inline-template>
+							<section class="page-section">
+								<h2 class="title">Управление уведомлениями</h2>
+								<warning-msg>
+									<p>
+										Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+										totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae
+										dicta sunt, explicabo. nemo enim ipsam voluptatem.
+										
+									</p>
+								</warning-msg>
+								<notifications-list inline-template>
+									<div class="notifications-list">
+										<div class="row">
+											<div class="col">
+												<div class="notification notification--active">
+													<div class="notification__head">
+														<div class="notification__icon notification__icon--telegram"></div><strong class="notification__title">Telegram</strong>
+													</div>
+													<div class="notification__body">
+														<base-button class="notification__button" inline-template>
+															<button class="base-button base-button--default base-button--small" type="reset">Отключить аккаунт</button>
+														</base-button>
+														<form-checkbox class="notification__checkbox" checked label="Только служебные"></form-checkbox>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="notification">
+													<div class="notification__head">
+														<div class="notification__icon notification__icon--icq"></div><strong class="notification__title">ICQ</strong>
+													</div>
+													<div class="notification__body">
+														<div class="notification__actions">
+															<div class="notification__action-item">
+																<div class="notification__action-label">Скопируйте команду авторизации</div>
+																<button class="notification__action-btn" title="Скопировать">
+																	<base-icon name="file_copy-outline"></base-icon>
+																</button>
+															</div>
+															<div class="notification__action-item">
+																<div class="notification__action-label">Перейдите в чат и отправьте команду боту</div>
+																<button class="notification__action-btn" title="Скопировать">
+																	<base-icon name="file_copy-outline"></base-icon>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="notification">
+													<div class="notification__head">
+														<div class="notification__icon notification__icon--skype"></div><strong class="notification__title">Skype</strong>
+													</div>
+													<div class="notification__body">
+														<div class="notification__actions">
+															<div class="notification__action-item">
+																<div class="notification__action-label">Скопируйте команду авторизации</div>
+																<button class="notification__action-btn" title="Скопировать">
+																	<base-icon name="file_copy-outline"></base-icon>
+																</button>
+															</div>
+															<div class="notification__action-item">
+																<div class="notification__action-label">Перейдите в чат и отправьте команду боту</div>
+																<button class="notification__action-btn" title="Скопировать">
+																	<base-icon name="file_copy-outline"></base-icon>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="notification notification--active">
+													<div class="notification__head">
+														<div class="notification__icon notification__icon--slack"></div><strong class="notification__title">Slack</strong>
+													</div>
+													<div class="notification__body">
+														<base-button class="notification__button" inline-template>
+															<button class="base-button base-button--default base-button--small" type="reset">Отключить аккаунт</button>
+														</base-button>
+														<form-checkbox class="notification__checkbox" label="Только служебные"></form-checkbox>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</notifications-list>
+							</section>
+						</page-section>
+					</div>
+				</div>
+			</index-page>
+		</div>
+	<script type="module" src="/js/chunk-vendors.a3610a03.js"></script><script type="module" src="/js/index.7d8084a5.js"></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script><script type="text/javascript" src="/js/chunk-vendors-legacy.76f0b6ac.js" nomodule></script><script type="text/javascript" src="/js/index-legacy.61dd5c63.js" nomodule></script></body>
+</html>
