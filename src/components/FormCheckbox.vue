@@ -63,6 +63,13 @@
 				color: #008dfe;
 			}
 		}
+
+		&:focus-visible {
+			& ~ .fake-input {
+				outline: 1px dotted currentColor;
+				outline: 5px auto -webkit-focus-ring-color;
+			}
+		}
 	}
 
 	.fake-input {
